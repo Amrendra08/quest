@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+
 app.get('/', function (req, res) {
 const { exec } = require('child_process');
 exec('bin/001', (err, stdout, stderr) => {
@@ -46,5 +47,12 @@ exec('bin/006 ' + JSON.stringify(req.headers), (err, stdout, stderr) => {
   return res.send(`${stdout}`);
 });
 });
+
+// Health check route
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
+
 
 app.listen(port, () => console.log(`Rearc quest listening on port ${port}!`))
