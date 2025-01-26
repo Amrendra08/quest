@@ -78,7 +78,7 @@ No. After interviewing, please change any solutions shared publicly to be privat
 No. There are many possible solutions to this quest that would be zero cost to you when using [AWS](https://aws.amazon.com/free), [GCP](https://cloud.google.com/free), or [Azure](https://azure.microsoft.com/en-us/pricing/free-services).
 
 
-Solution
+### Solution
 ==-
 1. Created ami with latest Ubuntu using script 'pre-requisites-install.sh'
 2. Installed packages - nodejs npm docker
